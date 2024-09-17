@@ -75,4 +75,10 @@ $(document).ready(function(){
     function sendEmail() {
         window.location.href = "mailto:recipient@example.com?subject=Subject&body=This is the body of the email";
     }
+
+    // Force page to load at the top
+$(window).on('load', function() {
+    $(window).scrollTop(0);
+});
+
 });
